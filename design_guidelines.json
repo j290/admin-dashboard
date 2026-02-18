@@ -1,0 +1,154 @@
+{
+  "brand_identity": {
+    "name": "EFFITECH",
+    "archetype": "The Eco-Industrialist",
+    "core_values": ["Precision", "Sustainability", "Transparency", "Scale"],
+    "emotional_tone": "Trustworthy, High-Tech, Calm, Professional",
+    "visual_style": "Premium Corporate Minimalism"
+  },
+  "design_system": {
+    "theme": "light",
+    "colors": {
+      "primary": {
+        "DEFAULT": "#064E3B",
+        "foreground": "#FFFFFF",
+        "description": "Deep Forest Green - Used for primary branding, sidebar active states, and strong headers."
+      },
+      "secondary": {
+        "DEFAULT": "#ECFDF5",
+        "foreground": "#064E3B",
+        "description": "Pale Mint - Used for backgrounds of active items, subtle highlights."
+      },
+      "accent": {
+        "DEFAULT": "#10B981",
+        "foreground": "#FFFFFF",
+        "description": "Vibrant Emerald - Used for success states, positive data trends, and call-to-action highlights."
+      },
+      "background": {
+        "DEFAULT": "#F9FAFB",
+        "paper": "#FFFFFF",
+        "description": "Off-white/Cool Gray 50 for main app background. Pure white for cards."
+      },
+      "text": {
+        "primary": "#111827",
+        "secondary": "#6B7280",
+        "muted": "#9CA3AF"
+      },
+      "border": "#E5E7EB",
+      "chart": {
+        "1": "#059669",
+        "2": "#34D399",
+        "3": "#0D9488",
+        "4": "#64748B",
+        "5": "#F59E0B"
+      }
+    },
+    "typography": {
+      "font_family": {
+        "heading": ["Outfit", "sans-serif"],
+        "body": ["Public Sans", "sans-serif"],
+        "mono": ["JetBrains Mono", "monospace"]
+      },
+      "scale": {
+        "h1": "text-4xl font-bold tracking-tight",
+        "h2": "text-3xl font-semibold tracking-tight",
+        "h3": "text-2xl font-semibold",
+        "body": "text-base font-normal leading-relaxed",
+        "small": "text-sm font-medium text-muted-foreground"
+      }
+    },
+    "spacing": {
+      "container_padding": "p-8 md:p-12",
+      "section_gap": "gap-8",
+      "card_padding": "p-6"
+    },
+    "radius": {
+      "default": "rounded-lg",
+      "button": "rounded-md",
+      "card": "rounded-xl"
+    },
+    "shadows": {
+      "card": "shadow-sm hover:shadow-md transition-shadow duration-200",
+      "dropdown": "shadow-lg border border-border/50",
+      "header": "shadow-sm backdrop-blur-md bg-white/80"
+    }
+  },
+  "layout_strategies": {
+    "auth_pages": {
+      "structure": "Split Screen (50/50 or 40/60)",
+      "left_panel": {
+        "content": "High-quality architectural/solar image with dark overlay.",
+        "elements": "Logo (Top Left), Testimonial or Mission Statement (Bottom Left).",
+        "style": "bg-primary/90 text-white relative overflow-hidden"
+      },
+      "right_panel": {
+        "content": "Login/Register Form",
+        "alignment": "Flex Center (Vertical & Horizontal)",
+        "style": "bg-white p-12"
+      }
+    },
+    "dashboard": {
+      "structure": "Sidebar Navigation + Top Header + Main Content Area",
+      "sidebar": {
+        "style": "bg-white border-r border-border w-64 fixed h-full z-30 hidden lg:block",
+        "item_style": "flex items-center gap-3 px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:bg-secondary hover:text-primary transition-colors"
+      },
+      "header": {
+        "style": "h-16 border-b border-border bg-white/80 backdrop-blur sticky top-0 z-20 flex items-center justify-between px-6"
+      },
+      "main_content": {
+        "style": "pt-20 pb-12 px-6 lg:pl-72 bg-background min-h-screen"
+      },
+      "grid_system": "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
+    }
+  },
+  "component_styling": {
+    "buttons": {
+      "primary": "bg-primary text-primary-foreground hover:bg-primary/90 shadow-sm",
+      "secondary": "bg-white text-primary border border-input hover:bg-secondary hover:text-primary-foreground",
+      "ghost": "hover:bg-secondary hover:text-primary",
+      "destructive": "bg-red-600 text-white hover:bg-red-700"
+    },
+    "cards": {
+      "default": "bg-white border border-border/60 shadow-sm rounded-xl overflow-hidden",
+      "metric": "p-6 flex flex-col gap-2"
+    },
+    "inputs": {
+      "default": "h-10 rounded-md border border-input bg-transparent px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+    }
+  },
+  "assets": {
+    "images": {
+      "auth_hero": "https://images.unsplash.com/photo-1639135723583-5c84eb8b6198?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "dashboard_placeholder": "https://images.unsplash.com/photo-1700809888987-cf2b29ecbd2c?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "about_hero": "https://images.unsplash.com/photo-1719437354892-f64ea7e03d4e?crop=entropy&cs=srgb&fm=jpg&q=85"
+    },
+    "icons": "Lucide React (default). Use thin strokes (1.5px) for elegance."
+  },
+  "universal_guidelines": [
+    "Use 'Outfit' font for all headings to establish the tech-forward brand.",
+    "Use 'Public Sans' for body text to ensure high readability in data-dense views.",
+    "Avoid pure black (#000000). Use #111827 or #0F172A.",
+    "All interactive elements must have a hover state.",
+    "Use 'sonner' for all toast notifications.",
+    "Ensure all forms have client-side validation with clear error messages.",
+    "Dashboard widgets should use a consistent height where possible.",
+    "Use 'recharts' for data visualization with the custom color palette defined above.",
+    "Add 'data-testid' to all interactive elements."
+  ],
+  "instructions_to_main_agent": {
+    "setup": [
+      "Install fonts: Outfit and Public Sans via Google Fonts or Fontsource.",
+      "Update tailwind.config.js with the custom colors and font families.",
+      "Create a 'Layout' component for the Dashboard structure.",
+      "Create an 'AuthLayout' component for the Login/Register pages."
+    ],
+    "implementation_order": [
+      "Setup Global Styles & Fonts",
+      "Build Auth Pages (Login, Register)",
+      "Build Dashboard Layout (Sidebar, Header)",
+      "Build Dashboard Overview Page (Widgets, Charts)",
+      "Build User Profile Page"
+    ]
+  }
+}

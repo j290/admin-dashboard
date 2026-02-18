@@ -1,0 +1,34 @@
+# Archivos de entorno (NUNCA subir - contienen contraseñas)
+.env
+.env.local
+.env.production
+backend/.env
+frontend/.env
+
+# Dependencias (se instalan automáticamente)
+node_modules/
+__pycache__/
+*.pyc
+
+# Archivos de compilación
+frontend/build/
+dist/
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# IDE
+.vscode/
+.idea/
+-e 
+# Environment files
+*.env
+*.env.*
+-e 
+# Environment files
+*.env
+*.env.*

@@ -1,0 +1,95 @@
+{
+  "summary": {
+    "total_tests": 14,
+    "passed_tests": 12,
+    "failed_tests": 2,
+    "success_rate": 85.71428571428571
+  },
+  "detailed_results": [
+    {
+      "test": "API Root Endpoint",
+      "success": true,
+      "details": "Status: 200",
+      "timestamp": "2026-01-18T15:05:17.192712"
+    },
+    {
+      "test": "User Registration",
+      "success": true,
+      "details": "Status: 200",
+      "timestamp": "2026-01-18T15:05:17.471982"
+    },
+    {
+      "test": "Registration Token Generation",
+      "success": true,
+      "details": "JWT token received",
+      "timestamp": "2026-01-18T15:05:17.472592"
+    },
+    {
+      "test": "Get Current User (Protected Route)",
+      "success": true,
+      "details": "Status: 200",
+      "timestamp": "2026-01-18T15:05:17.510512"
+    },
+    {
+      "test": "User Data Validation",
+      "success": true,
+      "details": "User: Test User 150517 (test_user_150517@effitech.com)",
+      "timestamp": "2026-01-18T15:05:17.511123"
+    },
+    {
+      "test": "Duplicate Email Registration (Should Fail)",
+      "success": true,
+      "details": "Status: 400",
+      "timestamp": "2026-01-18T15:05:17.549426"
+    },
+    {
+      "test": "User Login",
+      "success": true,
+      "details": "Status: 200",
+      "timestamp": "2026-01-18T15:05:17.850146"
+    },
+    {
+      "test": "Login Token Generation",
+      "success": true,
+      "details": "JWT token received",
+      "timestamp": "2026-01-18T15:05:17.850780"
+    },
+    {
+      "test": "Get Current User (Protected Route)",
+      "success": true,
+      "details": "Status: 200",
+      "timestamp": "2026-01-18T15:05:17.887461"
+    },
+    {
+      "test": "User Data Validation",
+      "success": true,
+      "details": "User: Test User 150517 (test_user_150517@effitech.com)",
+      "timestamp": "2026-01-18T15:05:17.888189"
+    },
+    {
+      "test": "Invalid Login Credentials (Should Fail)",
+      "success": true,
+      "details": "Status: 401",
+      "timestamp": "2026-01-18T15:05:18.145583"
+    },
+    {
+      "test": "Protected Route Without Token (Should Fail)",
+      "success": false,
+      "details": "Expected 401, got 403. Error: {'detail': 'Not authenticated'}",
+      "timestamp": "2026-01-18T15:05:18.184513"
+    },
+    {
+      "test": "Short Password Validation",
+      "success": false,
+      "details": "Expected 422, got 200. Error: {'access_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJiZTliNzE2Ni00ZmFjLTQ5NWItOTAyYi0wNjliYTEyZTlhNjQiLCJleHAiOjE3NjkzNTM1MTh9.c3jhqAbtcWcaDrKC-nDIzElm4l4QkSlWWCQh_NXk1CM', 'token_type': 'bearer', 'user': {'id': 'be9b7166-4fac-495b-902b-069ba12e9a64', 'email': 'test_short_pass_1788f3a1@effitech.com', 'full_name': 'Test User', 'created_at': '2026-01-18T15:05:18.217603Z'}}",
+      "timestamp": "2026-01-18T15:05:18.443434"
+    },
+    {
+      "test": "Invalid Email Format",
+      "success": true,
+      "details": "Status: 422",
+      "timestamp": "2026-01-18T15:05:18.478903"
+    }
+  ],
+  "timestamp": "2026-01-18T15:05:18.479536"
+}
